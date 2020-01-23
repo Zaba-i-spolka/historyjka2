@@ -1,4 +1,4 @@
-# historyjka2
+# Historyjka2
 
 Contributors: Bartłomiej Olech, Weronika Czarny
 
