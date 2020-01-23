@@ -20,8 +20,6 @@ G.add_edge(str(resData[1]['importedFile']), str(resData[4]['importedFile']), wei
 
 zero = [(u, v) for (u, v, d) in G.edges(data=True) if d['weight'] == 0]
 one = [(u, v) for (u, v, d) in G.edges(data=True) if d['weight'] == 1]
-# two = [(u, v) for (u, v, d) in G.edges(data=True) if d['weight'] == 2]
-# three = [(u, v) for (u, v, d) in G.edges(data=True) if d['weight'] == 3]
 
 pos = nx.spring_layout(G)  # positions for all nodes
 
@@ -33,10 +31,6 @@ nx.draw_networkx_edges(G, pos, edgelist=zero,
                        width=6, edge_color='g', arrowsize=30, arrowstyle='fancy')
 nx.draw_networkx_edges(G, pos, edgelist=one,
                        width=6, edge_color='y', arrowsize=30, arrowstyle='fancy')
-# nx.draw_networkx_edges(G, pos, edgelist=two,
-#                        width=6, edge_color='y', arrowsize=30, arrowstyle='fancy')
-# nx.draw_networkx_edges(G, pos, edgelist=three,
-#                        width=6, edge_color='y', arrowsize=30, arrowstyle='fancy')
 
 # labels
 nx.draw_networkx_labels(G, pos, font_size=20, font_family='sans-serif')
